@@ -1,0 +1,63 @@
+CREATE TABLE demo_test.user_master
+(
+    id integer NOT NULL,
+    user_role character varying NOT NULL,
+    name character varying,
+    th_id integer,
+    PRIMARY KEY (id)
+)
+WITH (
+    OIDS = FALSE
+);
+
+ALTER TABLE demo_test.u
+    OWNER to sppostgres;
+
+
+
+CREATE TABLE demo_test.option
+(
+    id integer NOT NULL,
+    objective character varying,
+    qus_id integer,
+    PRIMARY KEY (id)
+)
+WITH (
+    OIDS = FALSE
+);
+
+ALTER TABLE demo_test.option
+    OWNER to sppostgres;
+
+
+
+CREATE TABLE demo_test.quetion_entity
+(
+    qut_id integer NOT NULL,
+    question character varying,
+    th_id integer,
+    PRIMARY KEY (qut_id)
+)
+WITH (
+    OIDS = FALSE
+);
+
+ALTER TABLE demo_test.quetion_entity
+    OWNER to sppostgres;
+
+
+
+
+
+CREATE TABLE demo_test.thresurehunt_entity
+(
+    th_id integer NOT NULL,
+    thresure_hunt_name character varying,
+    PRIMARY KEY (th_id)
+)
+WITH (
+    OIDS = FALSE
+);
+
+ALTER TABLE demo_test.thresurehunt_entity
+    OWNER to sppostgres;
